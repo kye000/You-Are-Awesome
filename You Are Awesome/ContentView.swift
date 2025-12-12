@@ -59,11 +59,14 @@ struct ContentView: View {
                     
                     lastMessageNumber = nonRepeatingRandom(lastNumber: lastMessageNumber, upperBound: messages.count-1)
                     message = messages[lastMessageNumber]
+                    
                     lastImageNumber = nonRepeatingRandom(lastNumber: lastImageNumber, upperBound: numberOfImages-1)
                     imageName = "image\(lastImageNumber)"
+                    
                     lastSoundNumber = nonRepeatingRandom(lastNumber: lastSoundNumber, upperBound: numberOfSounds-1)
                     if soundIsOn {
-                        playSound(soundName: "Sound\(lastSoundNumber)")
+                        playSound(soundName:
+                                    "sound\(lastSoundNumber)")
                     }
                 }
                 
