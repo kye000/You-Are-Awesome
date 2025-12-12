@@ -89,7 +89,7 @@ struct ContentView: View {
             audioPlayer.stop()
         }
         guard let soundFile = NSDataAsset(name: soundName) else {
-            print("🤬Could not read rile named \(soundName)")
+            print("🤬Could not read file named \(soundName)")
             return
         }
         do {
